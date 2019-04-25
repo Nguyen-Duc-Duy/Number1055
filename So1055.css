@@ -1,0 +1,736 @@
+*{
+	padding:0;
+	margin: 0 auto;
+	font-family: sans-serif;
+}
+body{
+	width: 100%;
+
+}
+header{
+	border-top: solid 6px yellow;
+	margin:auto;
+}
+#info{
+	clear: both;
+	overflow: hidden;
+	width: 1150px;
+	margin: auto;
+}
+#info #alpha{
+	text-decoration: none;
+	font-size: 38px;
+	margin-top: 20px;	
+	float:left;
+	width:32%;
+	color:#2929d8;
+}
+#diachi{
+	float: left;
+	padding-top:30px;
+	width: 36%;
+}
+#search{
+
+	margin-left: 68px; 
+	float:left;
+	margin-top: 20px;
+	width: 26%;
+	border: solid 1px;
+	float: left;
+	position: relative;
+	border:0;
+	border-radius: 5px;
+}
+
+#search #s{
+	width: 255px;
+	height: 40px;
+	border-radius:20px 0 0 20px;
+	background-color: #16169e;
+	padding-top: 2px;
+	font-size: 20px;
+}
+#search ::-webkit-input-placeholder {
+	color: #0c7ff2;
+	font-size: 20px;
+}
+
+#search i{
+	padding: 12px 0 0 15px;
+	position: absolute;
+	color: white;
+	margin: 10px 0;
+	background-color: #16169e;
+	height: 28px;
+	width: 30px;
+	border-radius: 0 20px 20px 0;
+
+}
+#s{
+	width: 300px;
+	height: 10px;
+	border: none;
+	color: #0c7ff2;
+	padding-left: 30px;
+	margin: 10px 0;
+	outline:none;
+
+}
+#search #s:hover{
+	background: #e5e5e5;
+	transition: background .5s ease-out;
+	
+}
+#diachi li a{
+	text-decoration: none;
+	font-size:20px;
+
+}
+#diachi li {
+	list-style: none;
+}
+.dt{
+	width: 200px;
+	list-style: none;
+	font-size: 20px;
+	padding-left:337px;
+	margin: 0;
+}
+/* tuy chon*/
+nav .ly{
+	list-style:none;
+	float:left;
+
+}
+#trangchu a{
+	padding-left: 30px;
+}
+.menu li .thea{
+	text-decoration: none;
+	color: #fff;
+}
+nav{
+	padding-top:20px;
+	width: 84%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.menu {
+	padding-top: 23px;
+	float: left;
+	height:40px;
+	width:964px;
+}
+.menu .thea:hover{
+	background-color: #ffcc00;
+	border-radius: 10px 10px 0 0;
+}
+.menu .thea{
+	padding:23px;
+	border-left: solid 2px white;
+	background-color: #262424;
+}
+.menu nav{
+	margin-top: 40px;
+}
+#icon a{
+	float: left;
+	margin:18px 10px;
+	font-size: 30px;
+	color: #d1c8a5;
+}
+#icon a:hover{
+	color: white;
+}
+#icon{
+	background-color: #27242A;
+	height: 63px;
+width: 164px;
+float: left;
+
+
+}
+
+
+/* section*/
+/* dang ky va nen*/
+section{
+	margin-top:2px; 
+	border-top: solid 6px #999ea3;
+}
+.don{
+	padding:20px 0;
+	margin: 0;
+	position: relative;
+	width: 100%;
+}
+/* slide show*/
+
+.slideshow-container{
+	width: 100%;
+	position: relative;
+	margin: auto;
+}
+.slideshow-container img{
+	width: 100%;
+	vertical-align: middle;
+	height: 50%;
+}
+.numbertext {
+	left: 55%;
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+.text {
+
+	color: #f2f2f2;
+	font-size: 15px;
+	padding: 8px 0px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+}
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+.myslides{
+	width: 100%;
+}
+@-webkit-keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+
+@keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+	.prev, .next {font-size: 11px}
+}
+.prev, .next{
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+.next{
+	right: 0;
+	border-radius: 3px 0 0 3px;
+	right: 20%;
+}
+.prev{
+	left: 34%;
+}
+.prev:hover, .next:hover{
+	background-color: rgba(0,0,0,0.8);
+}
+.mySlides {display: none}
+.dot{
+	width: 20px;
+	height: 20px;
+	transition: background-color 0.6s ease;
+	cursor: pointer;
+	margin: 0 20px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+}
+.active, .dot:hover{
+	background-color: #717171;
+}
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+#dangky {
+	width: 400px;
+	background: #fff;
+	position: absolute;
+	top: 38px;
+	left:15px;
+	height: 465px;
+	z-index: 2;
+}
+.acc{
+	color: white;
+	font-size: 18px;
+	padding: 15px;
+	padding-left: 40px;
+	background-color: #1b1b7c;
+}
+.don h2{
+	position: absolute;
+	top: 69%;
+	left: 40%;
+	font-size: 70px;
+}
+input{
+	padding-left: 10px;
+	margin: 10px;
+	height: 30px;
+	width: 250px;
+
+}
+#nhap{
+	margin-left: 50px;
+	margin-top: 10px;
+}
+#nhap select{
+	padding-left: 10px;
+	margin: 10px;
+	height: 35px;
+	width: 265px;
+}
+.ac {
+	width: 300px;
+	border-radius:  30px;
+	margin-top: 20px;
+	color: white;
+	font-size: 18px;
+	padding: 15px;
+
+	background-color: #1b1b7c;
+}
+.ac a{
+	text-decoration: none;
+	color:white;
+	padding-left: 40px;
+}
+#uudiem{
+	padding-top: 20px;
+	overflow: hidden;
+}
+.container{
+	overflow: hidden;
+	margin: 0 15px;
+	margin: auto;
+	width: 1263px;
+}
+.tieude li{
+	text-align: center;
+	font-size: 30px;
+	color: #1b1b7c;
+	width: 600px;
+	list-style: none;
+}
+#uudiem .gachngang2{
+	width: 300px;
+	text-align: center;
+	height: 3px;
+	background-color: #999ea3;
+}
+#uudiem div ul{
+	text-align: center;
+	padding:30px 0 20px 0;
+}
+#uudiem div img{
+	padding-bottom: 33px;
+	width: 72px;
+}
+#uudiem .container div{
+	float: left;
+	width: 388px;
+	padding: 0 15px;
+}
+#uudiem p{
+	font-size: 20px;
+	color: #7f7f7f;
+	width: 348px;
+	text-align: center;
+	clear: both;
+	overflow: hidden;
+}
+.tieude{
+	clear: both;
+	overflow: hidden;
+	padding-top: 30px;
+}
+#tieubieu {
+	text-align: center;
+	overflow: hidden;
+	float: left;
+	width: 100%;	
+}
+#tieubieu h3{
+	position: absolute;
+	background-color: black;
+	color:white;
+	clear: both;
+	background:rgba(0,0,0,.5);
+	text-align: center;
+	padding: 10px 0;
+	text-transform: uppercase;
+}
+.tieude{
+	overflow: hidden;
+	text-align: center;
+	font-size: 40px;
+	font-weight: bold;
+	color: #1b1b7c;
+	list-style: none;
+}
+.doc img{
+	width: 268px;
+}
+.doc{
+	width: 268px;
+	float: left;
+	padding:0px 30px 50px 30px;
+}
+.doc h3{
+	margin-top: 300px;
+	width: 268px;
+}
+#ngang img{
+	width: 550px;
+}
+#ngang h3{
+	margin-top: 95px;
+	width: 550px;
+}
+#ngang div{
+	width: 550px;
+	padding: 0px 0 35px 0;
+}
+#ngang{
+	float: left;
+	padding: 0 20PX;
+}
+#tieubieu .gachngang2{
+	width: 200px;
+	float: none;
+}
+.gachngang2{
+	
+	text-align: center;
+	height: 3px;
+	background-color: #999ea3;
+	margin-bottom: 50px;
+}
+/* gia su*/
+#giasu{
+	float: left;
+	text-align: center;
+	width: 100%;
+}
+
+#giasu .gachngang2 {
+	width: 100px;
+}
+
+
+.anh{
+	width: 25%;
+	position: relative;
+	float: left;
+	margin-bottom: 50px; 
+}
+.anh .bong-mo{
+	width: 70%;
+	height: 90%;
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 20px;
+	transition: 1s opacity;
+	left: 46px;
+	opacity: 0;
+}
+.anh:hover .bong-mo{
+	opacity: 1;
+}
+.anh p , h2{
+	color: white;
+
+}
+.anh h2{
+	margin-top: 172px;
+
+}
+/* bat dau nhu the nao ?*/
+#dangkyngay .gachngang2{
+	width: 185px;
+	margin-bottom: 30px;
+}
+#dangkyngay{
+	margin-top: 50px;
+	width: 100%;
+	float: left;
+	text-align: center;
+	overflow: hidden;
+	position: relative;
+}
+#dangkyngay .container{
+	border: solid 5px #999ea3;
+	border-radius: 20px;
+	background-color: #e5e5e5;
+	height: 350px;
+	width: 1000px;
+}
+#dangkyngay p{
+	width: 800px;
+	font-size: 30px;
+	margin-bottom: 50px;
+	color: #999ea3;
+}
+
+#dangkyngay a{
+	text-decoration: none;
+	background-color: #1b1b7c;
+	border-radius: 30px;
+	color: white; 
+	font-size: 25px;
+	padding: 15px 30px;
+	margin: auto;
+	width: 100%;
+	text-align: center;
+	transition: 2s background-color;
+
+}
+#dangkyngay a:hover {
+	background-color: #e5e5e5;
+	border: solid 3px #1b1b7c;
+	color: #1b1b7c;
+}
+/* phu huynh noi gi ?*/
+#phuhuynh{
+	margin-top: 100px;
+	
+}
+#phuhuynh{
+	overflow: hidden;
+	background-color: #13142d;
+	float: left;
+	width: 100%;
+	color: white;
+
+}
+#phuhuynh h2{
+	margin-left: 50px;
+	font-size: 40px;
+}
+#boanh{
+	border-radius: 50%;
+}
+#phuhuynh1 {
+	border-left: solid 5px yellow;
+	margin: 30px 50px;
+	overflow: hidden;
+}
+#phuhuynh1 img{
+	float: left;
+	margin-left: 50px;
+	margin-top: 30px;
+	
+}
+#phuhuynh1 div h2{
+	margin:50px auto; 
+	width: 400px;
+	font-size: 50px;
+}
+#phuhuynh div p{
+	width: 500px;
+	font-size: 30px
+}
+/*chuyen tiep 3*/
+#chuyentiep3{
+	width: 200px;
+	height: 200px;
+	position: relative;
+	float: right;
+}
+.prev2, .next2{
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	color: white;
+	width: 10px;
+	height: 27px;
+	font-size: 20px;
+	padding: 16px;
+	font-weight: bold;
+	transition: 1s ease;
+	border-radius: 0 3px 3px 0;
+
+}
+.prev2:hover, .next2:hover{
+	background-color: rgb(0,0,0,0.8);
+}
+.next2{
+	right: 2px;
+	border-radius: 3px 0 0 3px;
+}
+div span.dot2{
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	margin: 0 2px;
+	background-color: red;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+	position: absolute;
+	z-index:0;
+}
+/*.dot2:hover {
+background-color: #717171;
+}
+/* tin tuc moi nhat */
+#tintucmoi .gachngang2{
+	width: 150px;
+	margin-bottom: 0px;
+
+}
+.tintuc{
+	margin: 50px 0;
+	overflow: hidden;
+	position: relative;
+
+}
+.tintuc div{
+	width: 700px;
+	height: 300px;
+	border: solid 2px #999ea3;
+	float: left;
+	margin:25px 25px 25px 150px;
+	transition: 1s background-color;
+	background-color: #e5e5e5;
+	transition: .5s border;
+}
+.tintuc div:hover{
+	background-color: white;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: solid 5px #1b1b7c;
+
+	box-shadow: 1px 1px 20px #888888;
+}
+.tintuc img{
+	position: absolute;
+	top: 69px;
+	left: 700px;
+	width: 300px;
+}
+.tintuc ul{
+	list-style: none;
+	font-size: 40px;
+	margin: 10px;
+}
+.tintuc a{
+	margin:10px 100px;
+	font-size: 20px;
+	text-decoration: none;
+	border-radius:30px;
+	background-color: #1b1b7c;
+	padding: 15px 20px;
+	color: white;
+
+}
+.tintuc div:hover a{
+	background-color: yellow;
+
+}
+.tintuc p{
+	width: 400px;
+	margin: 10px 0 30px 10px;
+	font-size: 30px;
+}
+/* happy ending*/
+#footer{
+	border-top: 5px solid yellow;
+	width: 100%;
+	background-color: #1b1b7c;
+	overflow: hidden;
+}
+#footer h1,#tuongtac h3{
+	color: white;
+	margin: 50px 0 10px 0;
+}
+#footer .container{
+	width: 85%;
+	margin: auto;
+}
+#tuychon1 ul{
+	color:#8ccafd;
+	margin:20px 40px;
+	font-size: 20px;
+}
+#tuychon1 a{
+	color:#8ccafd;
+	text-decoration: none;
+	transition:.5s padding-left;
+}
+#tuychon1 a:hover{
+	padding-left: 20px;
+}
+#tuychon2 a{
+	color:#8ccafd;
+	margin: 0 10px;
+	text-decoration: none;
+	transition: .5s padding-left;
+	-moz-transition: 3s padding-left;
+
+}
+#tuychon2 a:hover{
+	padding-left: 20px;
+}
+#tuychon2 i, #tuongtac i{
+	float: left;
+}
+#tuychon2 ul,#tuongtac ul{
+	margin-top: 20px;
+	margin-left: 20px;
+	font-size: 20px;
+	color:#8ccafd;
+	list-style: none;
+
+}
+#tuongtac li{
+	margin-left: 30px; 
+}
+#tuongtac h3{
+	margin-left: 20px; 
+}
+#het {
+	overflow: hidden;
+	margin-top: 100px;
+	border-top: solid 5px #8ccafd;
+}
+#het h2{
+	margin: 20px 0 10px 10px; 
+}
+#het div i{
+	font-size: 30px;
+	float: right;
+	margin:15px 20px 10px 0;
+	color: #d1c8a5;
+}
+#het i:hover{
+	color: white;
+}
+#het h2{
+	float: left;
+	width: 600px;
+}
